@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestWebpage</title>
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="logo">
+                <a href="../index.html" style="background-color: white;">JiHyun</a>
+            </div>
+            <div class="toggle"  onclick="myFunction()">
+                <div class="item-1"></div>
+                <div class="item-2"></div>
+                <div class="item-3"></div>
+                
+            </div>
+            
+            <div class="topMenu">
+                <ul class="topMenuUi">
+                    <li class="topMenuLi"><a href="introduce.html">introduce</a></li>
+                    <li class="topMenuLi"><a href="gallery.html">gallery</a></li>
+                    <li class="topMenuLi"><a href="interest.html">interest</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="toggleMenu">
+            <div class="toglleMenu1" ><a href="introduce.html">introduce</a></div>
+            <div class="toglleMenu2"><a href="gallery.html">gallery</a></div>
+            <div class="toglleMenu3"><a href="interest.html">interest</a></div>
+        </div>
+        
+        
+    </header>
+
+    <footer style="text-align: center;">
+        Copyright © my0990 All rights reserved.
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("toggleMenu");
+            if(x.style.display==="block"){
+                x.style.display="none";
+            } else {
+                x.style.display="block";
+            }
+        }
+    </script>
+</body>
