@@ -17,7 +17,7 @@
     text-shadow: 0 0 5px #333;
 }
 
-.profile {
+.profile-border {
     display: flex;
     align-items: center;
     flex-basis: 100%;
@@ -27,8 +27,8 @@
     
 }
 
-.profile::before, 
-.profile::after  {
+.profile-border::before, 
+.profile-border::after  {
     flex-grow: 1;
     content: "";
     height: 1px;
@@ -37,3 +37,24 @@
 
 }
 
+.profileText {
+    display: inline-block;
+    border-bottom: 5px solid yellow;
+    margin: 5px;
+}
+
+.profileImage {
+    width: 100%;
+    padding: 5%;
+    border-radius: 10%;
+    
+}
+
+.profileContents {
+    text-align: center;
+    
+}
+
+.profileContents li {
+    margin: 15px;
+}
