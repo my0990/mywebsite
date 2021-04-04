@@ -27,6 +27,16 @@
     
 }
 
+@media screen and (min-width: 769px){
+    .topMenuLi{
+        display: inline-block;
+        height: 0px;
+        line-height: 50px;
+        font-size: 1.5em;
+        margin: auto 20px;
+    }
+}
+
 .profile-border::before, 
 .profile-border::after  {
     flex-grow: 1;

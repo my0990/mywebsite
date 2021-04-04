@@ -11,6 +11,16 @@ html{
     font-size: 62.4%;
 }
 
+@media screen and (min-width: 769px){
+    .topMenuLi{
+        display: inline-block;
+        height: 0px;
+        line-height: 50px;
+        font-size: 1.5em;
+        margin: auto 20px;
+    }
+}
+
 .container .heading{
     margin:2rem 0;
     font-size: 3rem;
@@ -84,6 +94,10 @@ html{
 .toglleMenu2,
 .toglleMenu3 {
     font-size: 16px;
+}
+
+.topMenuLi{
+    font-size: 24px;
 }
 
 @media screen and (max-width: 1024px){

@@ -140,13 +140,7 @@
         display: none;
     }
 
-    .topMenuLi{
-        display: inline-block;
-        height: 0px;
-        line-height: 50px;
-        font-size: 1.5em;
-        margin: auto 20px;
-    }
+
 
     .topMenuUi {
         text-align: center;
