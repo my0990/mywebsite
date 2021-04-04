@@ -58,3 +58,7 @@
 .profileContents li {
     margin: 15px;
 }
+
+.profileContents ul{
+    margin: 50px auto;
+}

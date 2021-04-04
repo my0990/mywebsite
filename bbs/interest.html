@@ -12,7 +12,7 @@
     <header>
         <div class="content">
             <div class="logo">
-                <a href="../index.html" style="background-color: white;">JiHyun</a>
+                <a href="../index.html" style="background-color: white; font-size: 32px;">JiHyun</a>
             </div>
             <div class="toggle"  onclick="myFunction()">
                 <div class="item-1"></div>
@@ -25,19 +25,43 @@
                 <ul class="topMenuUi">
                     <li class="topMenuLi"><a href="introduce.html">Introduction</a></li>
                     <li class="topMenuLi"><a href="gallery.html">gallery</a></li>
-                    <li class="topMenuLi"><a href="interest.html">MyInterest</a></li>
+                    <li class="topMenuLi"><a href="interest.html">guitar</a></li>
                 </ul>
             </div>
         </div>
         <div id="toggleMenu">
             <div class="toglleMenu1" ><a href="introduce.html">Introduction</a></div>
             <div class="toglleMenu2"><a href="gallery.html">gallery</a></div>
-            <div class="toglleMenu3"><a href="interest.html">MyInterest</a></div>
+            <div class="toglleMenu3"><a href="interest.html">guitar</a></div>
         </div>
-        
+
         
     </header>
-    <footer style="text-align: center;">
+    <div class="container">
+
+        <div class="heading">video gallery</div>
+    
+        <div class="video-container">
+            <div class="video">
+                <h1>공드리-혁오</h1>
+                <video src="../video1.mp4"></video>
+            </div>
+            <div class="video">
+                <h1>태양의 에뛰드</h1>
+                <video src="../video2.mp4"></video>
+            </div>
+            <div class="video">
+                <h1>봄이좋냐??-10cm</h1>
+                <video src="../video3.mp4"></video>
+            </div>
+            <div class="video">
+                <h1>꿈을꿨어요-카더가든</h1>
+                <video src="../video4.mp4"></video>
+            </div>
+
+        </div>
+    </div>
+    <footer style="text-align: center; font-size: 16px;">
         Copyright © my0990 All rights reserved.
     </footer>
     <script>
@@ -49,5 +73,20 @@
                 x.style.display="block";
             }
         }
+
+        var video = document.querySelectorAll('video')
+
+        video.forEach(play => play.addEventListener('click', () => {
+            
+            play.classList.toggle('active'); 
+
+            if(play.paused){
+                play.play();
+            }else{
+                play.pause();
+                play.currentTime=0;
+            }
+        }));
+
     </script>
 </body>
