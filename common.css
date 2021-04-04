@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+    background-color: none;
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 1px #f1f1f1;
+}
+
+.logo {
+    position: absolute;
+    display: inline-block;
+    left: 45%;
+    line-height: 100%;
+    height: 50px;
+    background-color: gray;
+    font-size: 2em;
+    transform: translateX(-35px);
+}
+
+
+
+.logo a {
+    position: absolute;
+    color: black;
+    line-height: 100%;
+    top: 10%;
+    width: 70px;
+    
+}
+
+
+.toggle {
+    width: 40px;
+    height: 40px;
+    border: solid 2px gray;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 50%;
+    right: 0;
+    top: 10%;
+    right: 1%;
+}
+
+
+
+
+.item-1 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    border: solid 1px gray;
+    height: 1px;
+    display: inline-block;
+    background-color: white;
+
+    
+}
+.item-2 {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    width: 50%;
+    border: solid 1px gray;
+    height: 1px;
+    display: inline-block;
+    background-color: white;
+}
+.item-3 {
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    width: 50%;
+    border: solid 1px gray;
+    height: 1px;
+    display: inline-block;
+    background-color: white;
+}
+
+#toggleMenu {
+    color: grey;
+    text-align: center;
+    display: none;
+    
+}
+
+.toglleMenu1 {
+    height: 50px;
+    background-color: white;
+    border-bottom: solid 1px #f1f1f1;
+    line-height: 50px;
+}
+.toglleMenu2 {
+    height: 50px;
+    background-color: white;
+    border-bottom: solid 1px #f1f1f1;
+    line-height: 50px;
+}
+.toglleMenu3 {
+    height: 50px;
+    background-color: white;
+    border-bottom: solid 1px #f1f1f1;
+    line-height: 50px;
+}
+
+.topMenu {
+    display: none;
+}
+
+@media screen and (min-width: 769px) {
+    .logo {
+        left: 5%;
+        transform: translateX(0%);
+        
+    }
+
+    .logo a {
+        color: black;
+    }
+
+    .content {
+        height: 50px;
+        padding: 10px auto;
+    }
+
+    .topMenu {
+        display: block;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+
+
+    .topMenuUi {
+        text-align: center;
+        
+    }
+
+    .topMenuLi a {
+        color: gray;
+        
+        
+    }
+
+    .topMenuLi a:hover {
+        color: black;
+        text-decoration: underline;
+        
+        opacity: 0.75;
+    }
+}
